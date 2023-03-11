@@ -1,0 +1,17 @@
+version:"3.9"
+
+services:
+container_name: mysqldb
+image: mysql:8
+restart: unless-stopped
+environment: 
+MYSQL_ROOT_PASSWORD: rootmysql
+Volumes: /home/ùysql/data:/var/lib/mysql
+
+spring_app:
+image: projet-kaddem
+restart: en-failure
+ports: 
+- 8080
+MYSQL_ROOT_PASSWORD: rootmysql
+Volumes: /home/ùysql/data:/var/lib/mysql
