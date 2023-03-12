@@ -19,7 +19,7 @@
           <distributionManagement>
         <repository>
             <id>deploymentRepo</id>
-           http://172.168.1.110:8081/repository/docker-private-repository/
+          <url>http://172.168.1.110:8081/repository/docker-private-repository/</url>
         </repository>
     </distributionManagement>
     <dependencies>
